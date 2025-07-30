@@ -1,0 +1,92 @@
+.customers-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .customers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .customers-table th,
+  .customers-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .customers-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .customers-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .customers-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .add-btn {
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 8px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .cancel-btn {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  

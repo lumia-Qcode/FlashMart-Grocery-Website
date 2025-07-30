@@ -1,0 +1,118 @@
+.customer-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #5683e3 ;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-link:hover {
+    color: #ffeb3b; /* Yellow accent for contrast */
+    transform: translateY(-2px);
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffeb3b;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-logout {
+    background: rgba(255, 255, 255, 0.2);
+    color: red;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.6rem 1.4rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-logout:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .customer-navbar {
+      flex-direction: column;
+      padding: 1.2rem;
+      background: linear-gradient(135deg, #d18cee 0%, #59b4f1 100%);
+    }
+    
+    .nav-logo {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+    
+    .nav-link {
+      width: 100%;
+      text-align: center;
+      padding: 0.8rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-logout {
+      width: 80%;
+      margin-top: 1rem;
+      color:red;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+/* Container for the Delivery Status View */
+.delivery-status-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .delivery-status-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Error styling */
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Table styling */
+  .delivery-status-table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .delivery-status-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .delivery-status-table th,
+  .delivery-status-table td {
+    border: 1px solid #ddd;
+    padding: 10px;  /* Same padding as products-table */
+    text-align: left;
+  }
+  
+  .delivery-status-table th {
+    background-color: #4CAF50;  /* Green header like products-table */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .delivery-status-table tr:nth-child(even) {
+    background-color: #f2f2f2;  /* Similar even row background as products-table */
+  }
+  
+  .delivery-status-table tr:nth-child(odd) {
+    background-color: #ffffff;  /* Same as odd rows in products-table */
+  }
+  

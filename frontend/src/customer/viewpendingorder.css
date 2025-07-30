@@ -1,0 +1,114 @@
+.pending-orders-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b0082;
+}
+
+.pending-orders-container h2 {
+  font-size: 36px;
+  color: #7f5af0;
+  margin-bottom: 30px;
+}
+
+/* Orders Grid */
+.orders-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Order Card Styling */
+.order-card {
+  width: 300px;
+ 
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid #e0bbff;
+  box-shadow: 0 6px 12px rgba(128, 0, 128, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.order-card:hover {
+  transform: translateY(-8px);
+}
+
+.order-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* View Details Button */
+.order-card button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #c084fc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-card button:hover {
+  background-color: #a855f7;
+}
+
+/* Order Details Section */
+.order-details {
+  margin-top: 20px;
+  background: #f0e6ff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dabfff;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(123, 104, 238, 0.15);
+}
+
+.order-details h4 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.order-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-details li {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #d1b3ff;
+  padding-bottom: 0.5rem;
+}
+
+/* Error Styling */
+.error-message {
+  color: crimson;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .order-details {
+    font-size: 14px;
+  }
+
+  .pending-orders-container h2 {
+    font-size: 28px;
+  }
+}

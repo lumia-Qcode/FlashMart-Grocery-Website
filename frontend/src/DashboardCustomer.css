@@ -1,0 +1,351 @@
+/* General Container for the Home Page */
+
+
+.customer-home-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  position: relative;
+}
+
+/* Welcome Section */
+.welcome-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.welcome-text {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 600px;
+}
+
+.welcome-text h1 {
+  font-size: 50px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.welcome-text p {
+  font-size: 22px;
+  background: black;
+  color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Account Info Section */
+.customer-info-container {
+  margin-top: 60px;
+}
+
+.customer-info-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Align Buttons in the Same Line */
+.account-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Top Products Section */
+.top-products-container {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.top-products-container h2 {
+  font-size: 32px;
+  color: #4a90e2;
+  margin-bottom: 30px;
+}
+
+/* Product Cards Layout */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px; /* change from 87% to 12px for rounded rectangle look */
+  margin-bottom: 15px;
+}
+
+/* Product Name */
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+  color: #333;
+  background: #f2f2f2;
+  border-top: 1px solid #ddd;
+  text-transform: capitalize;
+}
+
+/* Navigation Buttons (Update / Order History) */
+.nav-button {
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  background-color: #007bff;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Logout Button */
+.logout-container {
+  margin-top: 50px;
+}
+
+.logout-button {
+  padding: 8px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #dc3545;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.review-item {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-text h1 {
+    font-size: 36px;
+  }
+
+  .welcome-text p {
+    font-size: 18px;
+  }
+
+  .nav-button {
+    font-size: 16px;
+    padding: 14px 24px;
+    width: 100%;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .top-products-container h2 {
+    font-size: 28px;
+  }
+}
+
+.info-row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.customer-info-container {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fefefe;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart-image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.category-container {
+  margin: 40px 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+
+
+.category-products {
+  margin-top: 15px;
+}
+
+.category-products .product-card {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.reviews-section {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 20px;
+}
+.reviews-section h5 {
+  margin-bottom: 5px;
+}
+.reviews-section ul {
+  padding-left: 20px;
+}
+.reviews-section li {
+  margin-bottom: 4px;
+}
+
+.category-image {
+  width: 180px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px; /* Slightly rounded corners; or set to 0 for perfect square/rect */
+  transition: transform 0.2s ease;
+}
+
+.category-image:hover {
+  transform: scale(1.05);
+}
+
+.submit-review-form {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.submit-review-form input,
+.submit-review-form textarea {
+  display: block;
+ 
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+/* Make textarea (comment box) bigger */
+.submit-review-form textarea {
+  height: 100px; /* adjust this value as needed */
+  width:100px;
+  resize: vertical; /* allows the user to resize it if desired */
+  resize:horizontal;
+}
+
+.submit-review-form button {
+  padding: 6px 12px;
+  background-color: #2d8b57;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+

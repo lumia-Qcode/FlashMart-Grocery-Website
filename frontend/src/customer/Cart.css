@@ -1,0 +1,360 @@
+/* Ensure all styles are scoped within .cart-page */
+.cart-page {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-page h1,
+.cart-page h2 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-page .cart-items {
+  margin-top: 20px;
+}
+
+.cart-page .cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.cart-page .cancel-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cart-page .cancel-button:hover {
+  background: #cc0000;
+}
+
+.cart-page .total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #222;
+}
+
+.cart-page .step-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cart-page .step-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0078d4;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cart-page .step-buttons button:hover {
+  background-color: #005fa3;
+}
+
+.cart-page .address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-page .address-form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-page .address-form input,
+.cart-page .address-form textarea {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-page .update-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.cart-page .update-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.cart-page .update-button:disabled {
+  background-color: #ccc !important;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.cart-page .footer {
+  background: linear-gradient(135deg, #c29dff, #ff80b3); /* Lighter purple-pink gradient */
+  color: transparent; /* Transparent text */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Larger font size for more impact */
+  font-weight: bold; /* Increased font weight */
+  border-top: 1px solid #ddd;
+  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; /* For cross-browser compatibility */
+}
+
+.cart-page .footer p {
+  margin: 0;
+  font-weight: bold; /* Ensure bold font for the paragraph */
+}
+
+.cart-page .footer a {
+  color: transparent; /* Transparent link text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  background-clip: text; /* Apply gradient to link text */
+  -webkit-background-clip: text; /* For cross-browser compatibility */
+}
+
+.cart-page .footer a:hover {
+  color: #ff80b3; /* Lighter pink on hover */
+  background: none; /* Ensure background doesn't show */
+}
+
+/* General Order Confirmation Styles */
+.cart-page .order-summary {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-page .order-summary h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6f42c1; /* Purple */
+  margin-bottom: 10px;
+}
+
+.cart-page .order-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-page .order-summary li {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.cart-page .order-summary .total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6f42c1; /* Purple */
+  margin-top: 20px;
+}
+
+/* Buttons Section */
+/* Wishlist Page Next Button */
+.cart-page .next-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cart-page .next-buttons button {
+  background: linear-gradient(135deg, #fcbad3, #ffe0e9); /* Soft pink gradient */
+  color: #b3396d; /* Deep rose text for contrast */
+  border: none;
+  padding: 10px 18px;
+  border-radius: 50px; /* Circular button with soft edges */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(252, 186, 211, 0.2); /* Lighter shadow */
+  text-transform: uppercase;
+}
+
+.cart-page .next-buttons button:hover {
+  background: linear-gradient(135deg, #f8a6c4, #ffd6e0); /* Slightly deeper pink */
+  color: white;
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 14px rgba(252, 186, 211, 0.3); /* Stronger shadow */
+}
+
+/* Optional: Make the button more fluid on focus */
+.cart-page .next-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(252, 186, 211, 0.5); /* Soft purple focus ring */
+}
+
+
+/* Confirmation Message */
+.cart-page h2 {
+  color: #6f42c1; /* Purple */
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cart-page p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #6f42c1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cart-page .quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 5px;
+}
+
+.cart-page .quantity-controls button {
+  padding: 2px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #6f42c1;
+}
+
+.cart-page .checkout-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cart-page .checkout-button:hover {
+  background-color: #218838;
+}
+
+/* Payment Method Section */
+.cart-page .payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cart-page .payment-methods label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 10px;
+}
+
+.cart-page .payment-methods input[type="radio"] {
+  accent-color: #6f42c1; /* Purple accent for the radio button */
+}
+
+.cart-page .payment-methods .payment-option {
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.cart-page .payment-methods .payment-option:hover {
+  background-color: #e1d9ff;
+}
+
+.cart-page .payment-methods .payment-option input[type="radio"]:checked + span {
+  font-weight: bold;
+  color: #6f42c1;
+}
+
+.cart-page .payment-methods .online-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cart-page .payment-methods .online-payment label {
+  font-size: 1rem;
+}
+
+.cart-page .payment-methods .online-payment input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.cart-page .payment-methods .online-payment input:focus {
+  outline: none;
+  border-color: #6f42c1;
+}
+
+.cart-page .payment-methods .online-payment .transaction-id {
+  margin-bottom: 10px;
+}
+
+.cart-page .payment-methods .online-payment .cash-amount {
+  margin-top: 10px;
+}
+
+.extra-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.slim-button {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(162, 12, 216, 0.667);
+}
+
+.slim-button:hover {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+

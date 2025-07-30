@@ -1,0 +1,26 @@
+.suppliers-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .suppliers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .suppliers-table th, .suppliers-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .suppliers-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .suppliers-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

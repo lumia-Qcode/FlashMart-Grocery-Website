@@ -1,0 +1,79 @@
+
+.update-profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .update-profile-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .update-profile-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-profile-container label {
+    margin-bottom: 15px;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .update-profile-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+  }
+  
+  .update-profile-container input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .update-profile-container button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Update Profile Button */
+  .update-profile-container .update-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .update-profile-container .update-button:hover {
+    background-color: #43a047;
+  }
+  
+  /* Change Password Button */
+  .update-profile-container .password-button {
+    background-color: #607d8b;
+    color: white;
+  }
+  
+  .update-profile-container .password-button:hover {
+    background-color: #546e7a;
+  }
+  
+  .status-message {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0077cc;
+    font-weight: 500;
+  }
+  

@@ -1,0 +1,127 @@
+.order-history-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4fc; /* Match the home background */
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.order-history-container h2 {
+    font-size: 36px;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+/* Order List Cards */
+.order-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.order-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.order-card:hover {
+    transform: translateY(-8px);
+}
+
+.order-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* View Details Button - Centered */
+.order-card button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centers the button */
+}
+
+.order-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Order Details Table */
+.order-details {
+    margin-top: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-details h3 {
+    font-size: 28px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.order-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-details th,
+.order-details td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.order-details th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .order-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .order-details table {
+        font-size: 14px;
+    }
+
+    .order-details h3 {
+        font-size: 24px;
+    }
+}
+
+.product-image {
+    width: 100px;  /* Adjust the size of the images */
+    height: auto;
+    border-radius: 8px;
+  }
+  
