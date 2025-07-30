@@ -307,6 +307,30 @@ ALTER TABLE Admin ADD CONSTRAINT CHECK_EMAIL_FORMAT_ADMIN CHECK ( --checks for t
 
 
 -- Table Population 
+--Insert data into Customer Table
+
+INSERT INTO Customer (Customer_Name, Customer_Email, Customer_PhoneNo, Customer_Address,Customer_Password)
+VALUES ('Ali', 'ali@gmail.com', '0301-2233445', 'Lahore, Pakistan','ali123'),
+('Sara', 'sara@hotmail.com', '0321-5566778', 'Lahore, Pakistan','sara123'),
+('Usman', 'usman@yahoo.com', '0333-1122334', 'Lahore, Pakistan','usman123'),
+('Ayesha', 'ayesha@gmail.com', '0302-3344556', 'Lahore, Pakistan','ayesha123'),
+('Bilal', 'bilal@gmail.com', '0302-3344759', 'Lahore, Pakistan','bilal123'),
+('Nida', 'nida@gmail.com', '0311-9988776', 'Lahore, Pakistan','nida123'),
+('Hamza', 'hamza@gmail.com', '0308-7766554', 'Lahore, Pakistan','hamza123'),
+('Zainab','zainab@gmail.com','0329-4455667', 'Lahore, Pakistan','zainab123'),
+('Tariq', 'tariq@outlook.com', '0344-2233445', 'Lahore, Pakistan','tariq123');
+
+
+select * from Customer
+
+--Insert data into Admin Table
+
+INSERT INTO ADMIN( Admin_Name,Admin_PhoneNo,Admin_Email,Admin_Password)
+VALUES('Nihaal','0300-9419440','nihaal@gmail.com','nihaal123'), 
+('Lumia','0320-1415806','lumi@gmail.com','lumia123'), 
+('Nayab','0311-5558877','nayab@gmail.com','nayab123')
+
+select * from Admin
 
 
 --Insert data into Supplier Details
